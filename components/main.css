@@ -1,0 +1,77 @@
+html {
+    box-sizing: border-box;
+}
+@import url("https://use.typekit.net/pck3put.css");
+@font-face {
+    font-family: pragmatica-extended, sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    src:"https://use.typekit.net/pck3put.css"
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.header {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 1.15em;
+    font-family: "pragmatica-extended", sans-serif;
+    font-weight: 50;
+    font-style: normal;
+    font-size: 1.15em;
+  }
+
+.header:focus{
+    color: #888;
+}
+
+.grid-content{
+    display: grid inline-grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    padding: 0.2rem;
+}
+
+.grid-content__atom{
+    max-width:10em;
+}
+
+
+
+a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.comp{
+    width: 100%;
+}
+
+
+
+.main-nav__list{
+    font-family: "pragmatica-extended", sans-serif;
+    font-weight: 70;
+    font-size: 4em;
+    text-transform: uppercase;
+    list-style-type: none;
+    animation: marquee 5s linear infinite;
+}
+@keyframes marquee{
+    0% {transform: translate(0,0);}
+    100% { transform: translate(-100%,0);}
+}
+.sup{
+    font-size:10px;
+}
+
+.main-nav__active{
+    color: white;
+    background: black;
+}

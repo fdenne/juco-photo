@@ -61,12 +61,13 @@ a{
     font-size: 4em;
     text-transform: uppercase;
     list-style-type: none;
-    animation: marquee 5s linear infinite;
+    padding: none;
+    margin:0em;
+    width:100%;
+    border-top: 5px, black;
+    border-bottom: 5px, black;
 }
-@keyframes marquee{
-    0% {transform: translate(0,0);}
-    100% { transform: translate(-100%,0);}
-}
+
 .sup{
     font-size:10px;
 }

@@ -1,5 +1,6 @@
 html {
     box-sizing: border-box;
+    box-sizing: inherit;
 }
 @import url("https://use.typekit.net/pck3put.css");
 @font-face {
@@ -7,6 +8,13 @@ html {
     font-weight: 800;
     font-style: normal;
     src:"https://use.typekit.net/pck3put.css"
+}
+body{
+    font-family: forma-djr-deck,sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+    background-color: khaki;
 }
 .container {
     display: flex;
@@ -25,7 +33,7 @@ html {
     font-size: 1.15em;
   }
 
-.header:focus{
+.header a:hover{
     color: #888;
 }
 
@@ -39,9 +47,12 @@ html {
 }
 
 .grid-content__atom{
-    max-width:10em;
+    max-width:9em;
 }
 
+.grid-content__atom:hover{
+    opacity: 0.5;
+}
 
 
 a{
@@ -64,8 +75,13 @@ a{
     padding: none;
     margin:0em;
     width:100%;
-    border-top: 5px, black;
-    border-bottom: 5px, black;
+    
+}
+
+.main-nav__item{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    background: white;
 }
 
 .sup{

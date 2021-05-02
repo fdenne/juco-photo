@@ -2,7 +2,6 @@ html {
     box-sizing: border-box;
     box-sizing: inherit;
 }
-@import url("https://use.typekit.net/pck3put.css");
 @font-face {
     font-family: pragmatica-extended, sans-serif;
     font-weight: 800;
@@ -10,22 +9,24 @@ html {
     src:"https://use.typekit.net/pck3put.css"
 }
 
-.container {
+.container { 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
 }
+
 .header {
-    background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
-    padding: none;
     font-family: "pragmatica-extended", sans-serif;
-    font-weight: 50;
+    font-weight: 500;
     font-style: normal;
     font-size: 0.9em;
-  }
+    position:-webkit-sticky;
+    position:sticky;
+    top:0px;
+}
 
 .header a:hover{
     color: #888;
@@ -38,7 +39,7 @@ html {
 }
 
 .grid-content__atom:hover{
-    opacity: 0.5;
+    opacity: 0.6;
 }
 
 a{
@@ -60,12 +61,31 @@ a{
     flex-wrap: wrap;
     width: 100%;
   }
-  
-  .column {
+
+
+.column {
     display: flex;
     flex-direction: column;
     flex-basis: 100%;
     flex: 1;
     max-width:7.9em;
     padding: 3px;
+  }
+
+  @media screen and (max-width: 992px) {
+    .header {
+      font-size: 1em;
+    }
+    .column{
+        max-width:10em;
+    }
+  }
+
+@media screen and (max-width: 600px) {
+    .header {
+      font-size:2em;
+    }
+    .column{
+        max-width:12em;
+    }
   }

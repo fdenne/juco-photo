@@ -10,7 +10,7 @@
     color: rgb(0, 0, 0);
     padding: 15px;
     font-family: "pragmatica-extended", sans-serif;
-    font-weight: 50;
+    font-weight:500;
     font-style: normal;
     font-size: 0.9em;
   }
@@ -21,11 +21,10 @@
 
 .main-nav__list{
     font-family: "pragmatica-extended", sans-serif;
-    font-weight: 70;
+    font-weight:700;
     font-size: 4em;
     text-transform: uppercase;
     list-style-type: none;
-    padding: none;
     margin:0em;
     width:100%;
     text-align: center;
@@ -36,6 +35,14 @@
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     background: white;
+}
+
+.main-nav__item a:hover{
+    color: white;
+    background: black;
+    border-top: 0px;
+    border-bottom:0px;
+    width: 100%;
 }
 
 .sup{

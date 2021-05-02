@@ -2,7 +2,6 @@ html {
     box-sizing: border-box;
     box-sizing: inherit;
 }
-@import url("https://use.typekit.net/pck3put.css");
 @font-face {
     font-family: pragmatica-extended, sans-serif;
     font-weight: 800;
@@ -28,7 +27,7 @@ body{
     color: rgb(0, 0, 0);
     padding: 1.15em;
     font-family: "pragmatica-extended", sans-serif;
-    font-weight: 50;
+    font-weight: 500;
     font-style: normal;
     font-size: 1.15em;
   }
@@ -38,7 +37,7 @@ body{
 }
 
 .grid-content{
-    display: grid inline-grid;
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     column-gap: 10px;
@@ -68,11 +67,10 @@ a{
 
 .main-nav__list{
     font-family: "pragmatica-extended", sans-serif;
-    font-weight: 70;
+    font-weight: 700;
     font-size: 4em;
     text-transform: uppercase;
     list-style-type: none;
-    padding: none;
     margin:0em;
     width:100%;
     
